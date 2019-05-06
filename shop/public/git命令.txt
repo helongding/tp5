@@ -1,0 +1,36 @@
+
+echo "# shop" >> README.md  
+git init  //初始化创库
+git add README.md //添加到创库
+git commit -m "first commit" // 提交到创库
+
+git status //查看创库状态
+git remote add origin https://github.com/helongding/shop.git //添加远程地址
+git push -u origin master  提交到远程
+  
+ssh-keygen -t rsa -C "helong3314@qq.com"
+git remote add origin https://github.com/helongding/shop.git
+git push -u origin master
+
+
+配置Git 
+
+首先在本地创建ssh key；
+
+ssh-keygen -t rsa -C "helong3314@qq.com"
+
+回家目录
+
+ cd ~
+ 
+ 
+进入key目录
+ cd .ssh/
+ 查看key
+ cat id_rsa.pub
+ 
+ 为了验证是否成功，在git bash下输入：
+ 
+ ssh -T git@github.com
+
+ 
